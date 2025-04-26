@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+<<<<<<< HEAD
+=======
+    alias(libs.plugins.google.gms.google.services)
+>>>>>>> 264c246 (database first changes)
 }
 
 android {
@@ -43,6 +47,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+<<<<<<< HEAD
+=======
+    implementation(libs.firebase.firestore)
+>>>>>>> 264c246 (database first changes)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

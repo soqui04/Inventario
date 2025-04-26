@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "336791765931",
+    "project_id": "inventariofinal-1480d",
+    "storage_bucket": "inventariofinal-1480d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336791765931:android:7aeec7dd8a30b54a87c8ee",
+        "android_client_info": {
+          "package_name": "mx.edu.itson.inventario"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOW7GfpmzW7pL7uZTQF06Qt4ugQ19aJP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

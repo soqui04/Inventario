@@ -1,9 +1,20 @@
 package mx.edu.itson.inventario
 
+<<<<<<< HEAD
 import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+=======
+import android.content.ContentValues.TAG
+import android.content.Intent
+import android.os.Bundle
+import android.util.Log
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
+>>>>>>> 264c246 (database first changes)
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -29,8 +40,31 @@ class RegisterActivity : AppCompatActivity() {
             } else if (pass != confirm) {
                 Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
             } else {
+<<<<<<< HEAD
                 // Aquí se registraría el usuario (simulado por ahora)
                 Toast.makeText(this, "Registro exitoso (simulado)", Toast.LENGTH_SHORT).show()
+=======
+                val db = Firebase.firestore
+
+                val user = hashMapOf(
+                    "nombre" to nombre,
+                    "correo" to email,
+                    "contrasena" to pass
+                )
+
+                db.collection("users")
+                    .add(user)
+                    .addOnSuccessListener { documentReference ->
+                        Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+                    }
+                    .addOnFailureListener { e ->
+                        Log.w(TAG, "Error adding document", e)
+                    }
+
+                // FALTA VALIDAR PASSWORD SEGURA DE 8 CARACTERES, VALIDAR CORREO QUE TENGA @ALGO.COM Y YA
+
+                Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
+>>>>>>> 264c246 (database first changes)
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
