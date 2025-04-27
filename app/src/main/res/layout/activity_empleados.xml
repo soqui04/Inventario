@@ -5,24 +5,19 @@
     android:orientation="vertical"
     android:padding="24dp">
 
+    <!-- Lista de Empleados  -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Empleados"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:text="Lista de Empleados"
+        android:textSize="18sp"
         android:layout_marginBottom="16dp" />
 
-    <ListView
-        android:id="@+id/listaEmpleados"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
+    <!-- Botón para agregar usuario (empleado) -->
     <Button
-        android:id="@+id/btnAgregarEmpleado"
+        android:id="@+id/btnAgregarUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar Empleado"
-        android:layout_marginTop="16dp" />
+        android:text="Agregar Usuario" />
+
 </LinearLayout>

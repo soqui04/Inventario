@@ -1,11 +1,7 @@
 [versions]
 androidGradlePlugin = "8.2.0"
 kotlin = "1.9.0"
-<<<<<<< HEAD
-=======
-googleGmsGoogleServices = "4.4.2"
-firebaseFirestore = "25.1.4"
->>>>>>> 264c246 (database first changes)
+activity = "1.10.1"
 
 [libraries]
 androidx-core-ktx = "androidx.core:core-ktx:1.12.0"
@@ -16,15 +12,8 @@ androidx-constraintlayout = "androidx.constraintlayout:constraintlayout:2.1.4"
 junit = "junit:junit:4.13.2"
 androidx-junit = "androidx.test.ext:junit:1.1.5"
 androidx-espresso-core = "androidx.test.espresso:espresso-core:3.5.1"
-<<<<<<< HEAD
-=======
-firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
->>>>>>> 264c246 (database first changes)
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-<<<<<<< HEAD
-=======
-google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
->>>>>>> 264c246 (database first changes)

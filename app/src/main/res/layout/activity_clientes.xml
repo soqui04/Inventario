@@ -5,24 +5,19 @@
     android:orientation="vertical"
     android:padding="24dp">
 
+    <!-- Lista de Clientes  -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clientes"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:text="Lista de Clientes"
+        android:textSize="18sp"
         android:layout_marginBottom="16dp" />
 
-    <ListView
-        android:id="@+id/listaClientes"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
+    <!-- Botón para agregar cliente -->
     <Button
         android:id="@+id/btnAgregarCliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar Cliente"
-        android:layout_marginTop="16dp" />
+        android:text="Agregar Cliente" />
+
 </LinearLayout>

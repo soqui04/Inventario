@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Inventario">
 
+        <!-- Actividades declaradas en el manifiesto -->
+        <activity
+            android:name=".AgregarProveedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarClienteActivity"
+            android:exported="false" /> <!-- Aquí declaramos AgregarClienteActivity -->
+        <activity
+            android:name=".AgregarUsuarioActivity"
+            android:exported="false" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ArticulosActivity" />
@@ -22,8 +32,6 @@
         <activity android:name=".ClientesActivity" />
         <activity android:name=".ProveedoresActivity" />
         <activity android:name=".EmpleadosActivity" />
-
-        <!-- Esta es la actividad de inicio y requiere android:exported -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -32,7 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

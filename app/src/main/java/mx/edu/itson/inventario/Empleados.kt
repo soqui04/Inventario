@@ -1,26 +1,21 @@
 package mx.edu.itson.inventario
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.*
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class EmpleadosActivity : AppCompatActivity() {
-
-    private val empleados = mutableListOf("Laura Ramírez", "Sergio Torres")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_empleados)
 
-        val lista = findViewById<ListView>(R.id.listaEmpleados)
-        val btnAgregar = findViewById<Button>(R.id.btnAgregarEmpleado)
+        val btnAgregarUsuario = findViewById<Button>(R.id.btnAgregarUsuario)
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, empleados)
-        lista.adapter = adapter
-
-        btnAgregar.setOnClickListener {
-            empleados.add("Nuevo Empleado")
-            adapter.notifyDataSetChanged()
+        // Al hacer click, abre el formulario para agregar un empleado
+        btnAgregarUsuario.setOnClickListener {
+            startActivity(Intent(this, AgregarUsuarioActivity::class.java))
         }
     }
 }
