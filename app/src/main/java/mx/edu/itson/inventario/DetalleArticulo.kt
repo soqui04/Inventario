@@ -17,6 +17,10 @@ class DetalleArticuloActivity : AppCompatActivity() {
         val btnEditar = findViewById<Button>(R.id.btnEditar)
         val btnEliminar = findViewById<Button>(R.id.btnEliminar)
 
+<<<<<<< HEAD
+=======
+        // Simulación: obtener datos desde intent
+>>>>>>> 6e0f556c0c294ea83e05ce9627209d0dc6225c61
         val nombre = intent.getStringExtra("nombre")
         val cantidad = intent.getStringExtra("cantidad")
         val categoria = intent.getStringExtra("categoria")
