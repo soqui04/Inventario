@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.edu.itson.inventario">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Inventario"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Inventario">
+
+        <!-- Actividades declaradas en el manifiesto -->
+        <activity
+            android:name=".AgregarProveedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarClienteActivity"
+            android:exported="false" /> <!-- Aquí declaramos AgregarClienteActivity -->
+        <activity
+            android:name=".AgregarUsuarioActivity"
+            android:exported="false" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ArticulosActivity" />
+        <activity android:name=".AgregarArticuloActivity" />
+        <activity android:name=".DetalleArticuloActivity" />
+        <activity android:name=".CategoriasActivity" />
+        <activity android:name=".MovimientosActivity" />
+        <activity android:name=".ReporteActivity" />
+        <activity android:name=".ConfiguracionActivity" />
+        <activity android:name=".ClientesActivity" />
+        <activity android:name=".ProveedoresActivity" />
+        <activity android:name=".EmpleadosActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
